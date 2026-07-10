@@ -1,6 +1,8 @@
+#!/usr/bin/env lua
+
 local M = {}
-local core = require('pywal16.core')
-local highlights = require('pywal16.highlights')
+local core = require('setvtrgb.core')
+local highlights = require('setvtrgb.highlights')
 
 function M.setup()
   local colors = core.get_colors()

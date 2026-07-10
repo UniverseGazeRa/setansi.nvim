@@ -1,5 +1,5 @@
 local M = {}
-local config = require('pywal16.config')
+local config = require("setvtrgb.config")
 
 function M.highlight_all(colors)
   local base_highlights = config.highlights_base(colors)

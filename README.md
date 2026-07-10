@@ -2,22 +2,8 @@
 
 OK, hold my beer while I'll try to explain what this repository is.
 
-Pywal16.nvim (this repo) is a fork/modification of the unmaintained
-[pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim), aiming to support
-a transparent background, 16 colors palettes, and more plugins.
-
-This fork is made to work with [pywal16](https://github.com/eylles/pywal16),
-which is itself a fork of pywal, generating/supporting 16 colors colorschemes
-(original pywal project only supports 9 colors).
-
-Here is what the nvim/pywal ecosystem looked like when I started this fork:
-
-| pywal version | editor | colorscheme |
-| --------------|--------|------------ |
-| [dylanaraps/pywal](https://github.com/dylanaraps/pywal) (archived) | vim | [dylanaraps/wal.vim](https://github.com/dylanaraps/wal.vim) (archived) |
-| [dylanaraps/pywal](https://github.com/dylanaraps/pywal) (archived) | neovim | [AlphaTechnolog/pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) (archived) <br> [oncomouse/Lushwal.nvim](https://github.com/oncomouse/lushwal.nvim) <br> [sonjiku/yawnc.nvim](https://github.com/sonjiku/yawnc.nvim) <br> [RedsXDD/neopywal.nvim](https://github.com/RedsXDD/neopywal.nvim) <br> ... |
-| [eylles/pywal16](https://github.com/eylles/pywal16) | vim | ? |
-| [eylles/pywal16](https://github.com/eylles/pywal16) | neovim | [uZer/pywal16.nvim](https://github.com/uZer/pywal16.nvim) ◄ (you are here!) |
+setvt16rgb.nvim (this repo) is a fork/modification of the mantained
+[pywal16.nvim](https://github.com/uZer/pywal16.nvim) aiming to support a colorful nvim experience for the Linux virtual console.
 
 This colorscheme is compatible with "classic" 16 colors palettes (solarized,
 molokai, base16, etc.), and has been made to preserve the "red", "green" and

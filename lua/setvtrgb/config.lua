@@ -1,9 +1,10 @@
 local M = {}
 
 M.highlights_base = function(colors)
+
   return {
     Boolean = { fg = colors.color5 },
-    Character = { fg = colors.color12 },
+    Character = { fg = colors.color5 },
     CmpDocumentationBorder = { fg = colors.foreground, bg = colors.transparent },
     CmpItemAbbr = { fg = colors.foreground, bg = colors.transparent },
     CmpItemAbbrDeprecated = { fg = colors.color2, bg = colors.transparent },
@@ -12,7 +13,7 @@ M.highlights_base = function(colors)
     CmpItemKind = { fg = colors.color4, bg = colors.transparent },
     CmpItemMenu = { fg = colors.color2, bg = colors.transparent },
     ColorColumn = { bg = colors.background },
-    Comment = { fg = colors.color8 },
+    Comment = { fg = colors.color7 },
     Conceal = { fg = colors.color4, bg = colors.transparent },
     Conditional = { fg = colors.color2 },
     Constant = { fg = colors.color9 },
@@ -42,7 +43,7 @@ M.highlights_base = function(colors)
     Ignore = { fg = colors.color7, bg = colors.transparent },
     IncSearch = { fg = colors.foreground, bg = colors.color3 },
     Include = { fg = colors.color6 },
-    Keyword = { fg = colors.color4 },
+    Keyword = { fg = colors.color1 },
     Label = { fg = colors.color4 },
     LineNr = { fg = colors.color8, bg = colors.transparent },
     Macro = { fg = colors.color6 },
@@ -56,8 +57,8 @@ M.highlights_base = function(colors)
     NormalFloat = { fg = colors.foreground, bg = colors.background },
     NormalNC = { fg = colors.foreground, bg = colors.transparent },
     NotifyBackground = { bg = colors.background },
-    Number = { fg = colors.color5 },
-    Operator = { fg = colors.color6 },
+    Number = { fg = colors.color4 },
+    Operator = { fg = colors.color7 },
     Pmenu = { fg = colors.foreground, bg = colors.transparent },
     PmenuSbar = { bg = colors.transparent },
     PmenuSel = { fg = colors.transparent, bg = colors.color0 },
@@ -81,15 +82,15 @@ M.highlights_base = function(colors)
     StatusLine = { fg = colors.transparent, bg = colors.transparent },
     StatusLineNC = { fg = colors.transparent, bg = colors.transparent },
     StorageClass = { fg = colors.color7 },
-    String = { fg = colors.color6 },
+    String = { fg = colors.color2 },
     Structure = { fg = colors.color6 },
     Substitute = { fg = colors.color1, bg = colors.color6 },
     Tag = { fg = colors.color4 },
-    TermCursor = { fg = colors.foreground, bg = colors.cursor },
-    TermCursorNC = { fg = colors.foreground, bg = colors.cursor },
+    TermCursor = { fg = colors.color11, bg = colors.cursor },
+    TermCursorNC = { fg = colors.color11, bg = colors.cursor },
     Title = { fg = colors.color4 },
     Todo = { fg = colors.color11, bg = colors.transparent },
-    Type = { fg = colors.color5 },
+    Type = { fg = colors.color6 },
     Typedef = { fg = colors.color6 },
     Variable = { fg = colors.color9 },
     VertSplit = { fg = colors.color4, bg = colors.transparent },
@@ -134,12 +135,12 @@ M.highlights_base = function(colors)
     diffRemoved = { fg = colors.color1 },
 
     -- GitGutter
-    GitGutterAdd = { fg = colors.color4 },     -- diff mode: Added line |diff.txt|
-    GitGutterChange = { fg = colors.color5 },  -- diff mode: Changed line |diff.txt|
+    GitGutterAdd = { fg = colors.color4 }, -- diff mode: Added line |diff.txt|
+    GitGutterChange = { fg = colors.color5 }, -- diff mode: Changed line |diff.txt|
     GitGutterDelete = { fg = colors.color11 }, -- diff mode: Deleted line |diff.txt|
 
     -- GitSigns
-    GitSignsAdd = { fg = colors.color2 },    -- diff mode: Added line |diff.txt|
+    GitSignsAdd = { fg = colors.color2 }, -- diff mode: Added line |diff.txt|
     GitSignsChange = { fg = colors.color3 }, -- diff mode: Changed line |diff.txt|
     GitSignsCurrentLineBlame = { fg = colors.color8, bg = colors.transparent },
     GitSignsDelete = { fg = colors.color1 }, -- diff mode: Deleted line |diff.txt|
@@ -260,7 +261,7 @@ M.highlights_base = function(colors)
     -- TSComment           = { };    -- For color1 blocks.
     TSComment = { fg = colors.color8 },
     TSConstructor = { fg = colors.color6 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    TSDanger = { fg = colors.transparent, bg = colors.color3 },
+    TSDanger = { bg = colors.color3 },
     TSNote = { fg = colors.transparent, bg = colors.color5 },
     TSWarning = { fg = colors.transparent, bg = colors.color5 },
     -- TSConditional       = { };    -- For keywords related to conditionnals.
@@ -275,23 +276,23 @@ M.highlights_base = function(colors)
     -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
     -- TSFuncMacro         = { };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     -- TSInclude           = { };    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-    TSKeyword = { fg = colors.color6 },         -- For keywords that don't fall in previous categories.
-    TSKeywordFunction = { fg = colors.color6 }, -- For keywords used to define a fuction.
-    TSLabel = { fg = colors.color7 },           -- For labels: `label:` in C and `:label:` in Lua.
+    TSKeyword = { fg = colors.color6 }, -- For keywords that don't fall in previous categories.
+    TSKeywordFunction = { fg = colors.color11 }, -- For keywords used to define a fuction.
+    TSLabel = { fg = colors.color7 }, -- For labels: `label:` in C and `:label:` in Lua.
     -- TSMethod            = { };    -- For method calls and definitions.
     -- TSNamespace         = { };    -- For identifiers referring to modules and namespaces.
     -- TSNone              = { };    -- TODO: docs
     -- TSNumber            = { };    -- For all numbers
-    TSOperator = { fg = colors.color7 },         -- For any operator: `+`, but also `->` and `*` in C.
-    TSParameter = { fg = colors.color5 },        -- For parameters of a function.
+    TSOperator = { fg = colors.color7 }, -- For any operator: `+`, but also `->` and `*` in C.
+    TSParameter = { fg = colors.color5 }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
-    TSProperty = { fg = colors.color4 },         -- Same as `TSField`.
-    TSPunctDelimiter = { fg = colors.color7 },   -- For delimiters ie: `.`
+    TSProperty = { fg = colors.color4 }, -- Same as `TSField`.
+    TSPunctDelimiter = { fg = colors.color7 }, -- For delimiters ie: `.`
     TSPunctBracket = { fg = colors.foreground }, -- For brackets and parens.
-    TSPunctSpecial = { fg = colors.color7 },     -- For special punctutation that does not fall in the catagories before.
+    TSPunctSpecial = { fg = colors.color7 }, -- For special punctutation that does not fall in the catagories before.
     -- TSRepeat            = { };    -- For keywords related to loops.
     -- TSString            = { };    -- For strings.
-    TSStringRegex = { fg = colors.color7 },  -- For regexes.
+    TSStringRegex = { fg = colors.color7 }, -- For regexes.
     TSStringEscape = { fg = colors.color6 }, -- For escape characters within a string.
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     -- TSType              = { };    -- For types.

@@ -26,7 +26,7 @@ local assets = {
   slim_dot = '•',
 }
 
-local colors = require('pywal16.core').get_colors()
+local colors = require('setvtrgb.core').get_colors()
 
 -- settings
 local sett = {
@@ -294,7 +294,7 @@ components.active[2][1] = {
   },
 }
 
--- genral diagnostics (errors, warnings. info and hints)
+-- general diagnostics (errors, warnings. info and hints)
 components.active[2][2] = {
   provider = "diagnostic_errors",
   enabled = function()

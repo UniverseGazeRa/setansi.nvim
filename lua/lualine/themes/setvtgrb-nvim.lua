@@ -1,9 +1,9 @@
-local core = require('pywal16.core')
+local core = require('setvtrgb.core')
 local colors = core.get_colors()
 
-local pywal16 = {}
+local setvtrgb = {}
 
-pywal16.normal = {
+setvtrgb.normal = {
   a = { bg = colors.color4, fg = colors.background },
   b = { bg = colors.background, fg = colors.color4 },
   c = { bg = colors.transparent, fg = colors.color4 },
@@ -12,7 +12,7 @@ pywal16.normal = {
   x = { bg = colors.transparent, fg = colors.color4 },
 }
 
-pywal16.insert = {
+setvtrgb.insert = {
   a = { bg = colors.color2, fg = colors.background },
   b = { bg = colors.background, fg = colors.color2 },
   c = { bg = colors.transparent, fg = colors.color2 },
@@ -21,7 +21,7 @@ pywal16.insert = {
   x = { bg = colors.transparent, fg = colors.color2 },
 }
 
-pywal16.command = {
+setvtrgb.command = {
   a = { bg = colors.color6, fg = colors.background },
   b = { bg = colors.background, fg = colors.color6 },
   c = { bg = colors.transparent, fg = colors.color6 },
@@ -30,7 +30,7 @@ pywal16.command = {
   x = { bg = colors.transparent, fg = colors.color6 },
 }
 
-pywal16.visual = {
+setvtrgb.visual = {
   a = { bg = colors.color5, fg = colors.background },
   b = { bg = colors.background, fg = colors.color5 },
   c = { bg = colors.transparent, fg = colors.color5 },
@@ -39,7 +39,7 @@ pywal16.visual = {
   x = { bg = colors.transparent, fg = colors.color5 },
 }
 
-pywal16.replace = {
+setvtrgb.replace = {
   a = { bg = colors.color11, fg = colors.background },
   b = { bg = colors.background, fg = colors.color11 },
   c = { bg = colors.transparent, fg = colors.color11 },
@@ -48,7 +48,7 @@ pywal16.replace = {
   x = { bg = colors.transparent, fg = colors.color11 },
 }
 
-pywal16.inactive = {
+setvtrgb.inactive = {
   a = { bg = colors.background, fg = colors.color7 },
   b = { bg = colors.background, fg = colors.foreground, gui = "bold" },
   c = { bg = colors.background, fg = colors.foreground },
@@ -57,4 +57,4 @@ pywal16.inactive = {
   x = { bg = colors.background, fg = colors.foreground },
 }
 
-return pywal16
+return setvtrgb
