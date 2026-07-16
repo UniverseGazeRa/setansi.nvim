@@ -40,27 +40,28 @@ Currently the theme implemented is the fantastic ANSI based palette from (hamvoc
 
 ## Plugin Support
 
-- NeoVim (checkhealth...)
-- BetterWhitespace
-- BufferLine
-- Coc
-- Diff
-- Feline
-- GitGutter
-- GitSigns
-- Indent-BlankLine
-- Illuminate
-- LSP
-- LspSaga
-- LspTrouble
-- Lualine
-- Neogit
-- NvimTree
-- nvim-navic
-- Nvim-scrollbar
-- Telescope
-- Tree-sitter
-- ...
+  Currently a WIP!
+<!-- - NeoVim (checkhealth...) -->
+<!-- - BetterWhitespace -->
+<!-- - BufferLine -->
+<!-- - Coc -->
+<!-- - Diff -->
+<!-- - Feline -->
+<!-- - GitGutter -->
+<!-- - GitSigns -->
+<!-- - Indent-BlankLine -->
+<!-- - Illuminate -->
+<!-- - LSP -->
+<!-- - LspSaga -->
+<!-- - LspTrouble -->
+<!-- - Lualine -->
+<!-- - Neogit -->
+<!-- - NvimTree -->
+<!-- - nvim-navic -->
+<!-- - Nvim-scrollbar -->
+<!-- - Telescope -->
+<!-- - Tree-sitter -->
+<!-- - ... -->
 
 Feel free to fork or to PR other integrations.
 
