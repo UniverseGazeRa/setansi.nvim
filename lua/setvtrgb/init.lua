@@ -6,7 +6,6 @@ local highlights = require('setvtrgb.highlights')
 
 function M.setup()
   local colors = core.get_colors()
-  vim.opt.termguicolors = true
   highlights.highlight_all(colors)
 end
 

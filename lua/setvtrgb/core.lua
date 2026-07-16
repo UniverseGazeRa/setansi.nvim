@@ -7,9 +7,9 @@ function M.get_colors()
   if vim.fn.filereadable(SETVTRGB_PATH) == 1 then
     vim.cmd("source " .. SETVTRGB_PATH)
   else
-    vim.notify("couldn't read wal colors, file does not exist")
+    vim.notify("couldn't read setvtrgb colors, file does not exist")
   end
-
+print(vim.g.color14)
   return {
     transparent = "NONE",
     background = vim.g.color0,

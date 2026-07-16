@@ -13,17 +13,17 @@ M.highlights_base = function(colors)
     CmpItemKind = { fg = colors.color4, bg = colors.transparent },
     CmpItemMenu = { fg = colors.color2, bg = colors.transparent },
     ColorColumn = { bg = colors.background },
-    Comment = { fg = colors.color7 },
+    Comment = { fg = colors.color0 },
     Conceal = { fg = colors.color4, bg = colors.transparent },
-    Conditional = { fg = colors.color2 },
-    Constant = { fg = colors.color9 },
+    Conditional = { fg = colors.color10 },
+    Constant = { fg = colors.color15 },
     Cursor = { fg = colors.foreground, bg = colors.cursor },
     CursorColumn = { bg = colors.transparent },
     CursorIM = { fg = colors.foreground, bg = colors.cursor },
     CursorLine = { bg = colors.transparent },
     CursorLineNr = { fg = colors.color1 },
-    Debug = { fg = colors.color11 },
-    Define = { fg = colors.color6 },
+    Debug = { fg = colors.color3 },
+    Define = { fg = colors.color14 },
     Delimiter = { fg = colors.foreground },
     DiffAdd = { fg = colors.foreground, bg = colors.color2 },
     DiffChange = { fg = colors.transparent, bg = colors.color0 },
@@ -34,16 +34,16 @@ M.highlights_base = function(colors)
     Error = { fg = colors.color11, bg = colors.transparent },
     ErrorMsg = { fg = colors.color11, bg = colors.transparent },
     Exception = { fg = colors.color6 },
-    Float = { fg = colors.color5 },
+    Float = { fg = colors.color13 },
     FloatBorder = { fg = colors.foreground, bg = colors.transparent },
     FoldColumn = { fg = colors.color4, bg = colors.transparent },
     Folded = { fg = colors.color4, bg = colors.transparent },
-    Function = { fg = colors.color3 },
+    Function = { fg = colors.color10 },
     Identifier = { fg = colors.color5 },
     Ignore = { fg = colors.color7, bg = colors.transparent },
     IncSearch = { fg = colors.foreground, bg = colors.color3 },
-    Include = { fg = colors.color6 },
-    Keyword = { fg = colors.color1 },
+    Include = { fg = colors.color14 },
+    Keyword = { fg = colors.color9 },
     Label = { fg = colors.color4 },
     LineNr = { fg = colors.color8, bg = colors.transparent },
     Macro = { fg = colors.color6 },
@@ -74,7 +74,7 @@ M.highlights_base = function(colors)
     SpecialChar = { fg = colors.foreground },
     SpecialComment = { fg = colors.color2 },
     SpecialKey = { fg = colors.color4 },
-    SpellBad = { sp = colors.color1, undercurl = true },
+    SpellBad = { sp = colors.color1 },
     SpellCap = { fg = colors.color6 },
     SpellLocal = { fg = colors.color4 },
     SpellRare = { fg = colors.color6 },
@@ -83,18 +83,18 @@ M.highlights_base = function(colors)
     StatusLineNC = { fg = colors.transparent, bg = colors.transparent },
     StorageClass = { fg = colors.color7 },
     String = { fg = colors.color2 },
-    Structure = { fg = colors.color6 },
+    Structure = { fg = colors.color14 },
     Substitute = { fg = colors.color1, bg = colors.color6 },
     Tag = { fg = colors.color4 },
     TermCursor = { fg = colors.color11, bg = colors.cursor },
     TermCursorNC = { fg = colors.color11, bg = colors.cursor },
     Title = { fg = colors.color4 },
-    Todo = { fg = colors.color11, bg = colors.transparent },
-    Type = { fg = colors.color6 },
+    Todo = { fg = colors.color3, bg = colors.color5 },
+    Type = { ctermfg = red },
     Typedef = { fg = colors.color6 },
     Variable = { fg = colors.color9 },
     VertSplit = { fg = colors.color4, bg = colors.transparent },
-    Visual = { fg = colors.foreground, bg = colors.color5 },
+    Visual = { fg = colors.foreground, bg = colors.color1 },
     VisualNOS = { bg = colors.transparent },
     WarningMsg = { fg = colors.color3, bg = colors.transparent },
     Whitespace = { fg = colors.color8, bg = colors.background },
@@ -116,13 +116,13 @@ M.highlights_base = function(colors)
 
     -- diagnostics
     DiagnosticError = { fg = colors.color9 },
-    DiagnosticHint = { fg = colors.color14 },
-    DiagnosticInfo = { fg = colors.color15 },
-    DiagnosticWarn = { fg = colors.color11 },
-    DiagnosticUnderlineError = { undercurl = true, fg = colors.color9 },
-    DiagnosticUnderlineHint = { undercurl = true, fg = colors.color14 },
-    DiagnosticUnderlineInfo = { undercurl = true, fg = colors.color15 },
-    DiagnosticUnderlineWarn = { undercurl = true, fg = colors.color11 },
+    DiagnosticHint = { fg = colors.color8 },
+    DiagnosticInfo = { fg = colors.color7 },
+    DiagnosticWarn = { fg = colors.color3 },
+    DiagnosticUnderlineError = { fg = colors.color1 },
+    DiagnosticUnderlineHint = { fg = colors.color8 },
+    DiagnosticUnderlineInfo = { fg = colors.color7 },
+    DiagnosticUnderlineWarn = { fg = colors.color3 },
 
     -- diff
     diffAdded = { fg = colors.color2 },
@@ -137,12 +137,12 @@ M.highlights_base = function(colors)
     -- GitGutter
     GitGutterAdd = { fg = colors.color4 }, -- diff mode: Added line |diff.txt|
     GitGutterChange = { fg = colors.color5 }, -- diff mode: Changed line |diff.txt|
-    GitGutterDelete = { fg = colors.color11 }, -- diff mode: Deleted line |diff.txt|
+    GitGutterDelete = { fg = colors.color3 }, -- diff mode: Deleted line |diff.txt|
 
     -- GitSigns
     GitSignsAdd = { fg = colors.color2 }, -- diff mode: Added line |diff.txt|
     GitSignsChange = { fg = colors.color3 }, -- diff mode: Changed line |diff.txt|
-    GitSignsCurrentLineBlame = { fg = colors.color8, bg = colors.transparent },
+    GitSignsCurrentLineBlame = { fg = colors.color0, bg = colors.transparent },
     GitSignsDelete = { fg = colors.color1 }, -- diff mode: Deleted line |diff.txt|
 
     -- Illuminate
@@ -167,7 +167,7 @@ M.highlights_base = function(colors)
     LspSagaFinderSelection = { fg = colors.color1 },
     LspSagaHoverBorder = { fg = colors.color7 },
     LspSagaRenameBorder = { fg = colors.color4 },
-    LspSagaSignatureHelpBorder = { fg = colors.color11 },
+    LspSagaSignatureHelpBorder = { fg = colors.color3 },
     ReferencesCount = { fg = colors.color6 },
     ReferencesIcon = { fg = colors.color7 },
     TargetWord = { fg = colors.color7 },
@@ -181,7 +181,7 @@ M.highlights_base = function(colors)
     NeogitBranch = { fg = colors.color6 },
     NeogitDiffAddHighlight = { fg = colors.color4, bg = colors.color4 },
     NeogitDiffContextHighlight = { bg = colors.transparent, fg = colors.foreground },
-    NeogitDiffDeleteHighlight = { fg = colors.color11, bg = colors.color11 },
+    NeogitDiffDeleteHighlight = { fg = colors.color3, bg = colors.color3 },
     NeogitHunkHeader = { bg = colors.transparent, fg = colors.foreground },
     NeogitHunkHeaderHighlight = { bg = colors.foreground, fg = colors.color7 },
     NeogitRemote = { fg = colors.color6 },
@@ -259,50 +259,50 @@ M.highlights_base = function(colors)
     -- TSBoolean           = { };    -- For booleans.
     -- TSCharacter         = { };    -- For characters.
     -- TSComment           = { };    -- For color1 blocks.
-    TSComment = { fg = colors.color8 },
-    TSConstructor = { fg = colors.color6 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    TSDanger = { bg = colors.color3 },
-    TSNote = { fg = colors.transparent, bg = colors.color5 },
-    TSWarning = { fg = colors.transparent, bg = colors.color5 },
+    -- TSComment = { fg = colors.color0 },
+    -- TSConstructor = { fg = colors.color6 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    -- TSDanger = { bg = colors.color3 },
+    -- TSNote = { fg = colors.transparent, bg = colors.color5 },
+    -- TSWarning = { fg = colors.transparent, bg = colors.color5 },
     -- TSConditional       = { };    -- For keywords related to conditionnals.
     -- TSConstant          = { };    -- For constants
     -- TSConstBuiltin      = { };    -- For constant that are built in the language: `nil` in Lua.
     -- TSConstMacro        = { };    -- For constants that are defined by macros: `NULL` in C.
     -- TSError             = { };    -- For syntax/parser errors.
     -- TSException         = { };    -- For exception related keywords.
-    TSField = { fg = colors.color12 }, -- For fields.
+    -- TSField = { fg = colors.color4 }, -- For fields.
     -- TSFloat             = { };    -- For floats.
     -- TSFunction          = { };    -- For function (calls and definitions).
     -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
     -- TSFuncMacro         = { };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     -- TSInclude           = { };    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-    TSKeyword = { fg = colors.color6 }, -- For keywords that don't fall in previous categories.
-    TSKeywordFunction = { fg = colors.color11 }, -- For keywords used to define a fuction.
-    TSLabel = { fg = colors.color7 }, -- For labels: `label:` in C and `:label:` in Lua.
+    -- TSKeyword = { fg = colors.color6 }, -- For keywords that don't fall in previous categories.
+    -- TSKeywordFunction = { fg = colors.color3 }, -- For keywords used to define a fuction.
+    -- TSLabel = { fg = colors.color7 }, -- For labels: `label:` in C and `:label:` in Lua.
     -- TSMethod            = { };    -- For method calls and definitions.
     -- TSNamespace         = { };    -- For identifiers referring to modules and namespaces.
     -- TSNone              = { };    -- TODO: docs
     -- TSNumber            = { };    -- For all numbers
-    TSOperator = { fg = colors.color7 }, -- For any operator: `+`, but also `->` and `*` in C.
-    TSParameter = { fg = colors.color5 }, -- For parameters of a function.
+    -- TSOperator = { fg = colors.color7 }, -- For any operator: `+`, but also `->` and `*` in C.
+    -- TSParameter = { fg = colors.color5 }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
-    TSProperty = { fg = colors.color4 }, -- Same as `TSField`.
-    TSPunctDelimiter = { fg = colors.color7 }, -- For delimiters ie: `.`
-    TSPunctBracket = { fg = colors.foreground }, -- For brackets and parens.
-    TSPunctSpecial = { fg = colors.color7 }, -- For special punctutation that does not fall in the catagories before.
+    -- TSProperty = { fg = colors.color4 }, -- Same as `TSField`.
+    -- TSPunctDelimiter = { fg = colors.color7 }, -- For delimiters ie: `.`
+    -- TSPunctBracket = { fg = colors.foreground }, -- For brackets and parens.
+    -- TSPunctSpecial = { fg = colors.color7 }, -- For special punctutation that does not fall in the catagories before.
     -- TSRepeat            = { };    -- For keywords related to loops.
     -- TSString            = { };    -- For strings.
-    TSStringRegex = { fg = colors.color7 }, -- For regexes.
-    TSStringEscape = { fg = colors.color6 }, -- For escape characters within a string.
+    -- TSStringRegex = { fg = colors.color7 }, -- For regexes.
+    -- TSStringEscape = { fg = colors.color6 }, -- For escape characters within a string.
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     -- TSType              = { };    -- For types.
     -- TSTypeBuiltin       = { };    -- For builtin types.
-    TSVariableBuiltin = { fg = colors.color11 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    -- TSVariableBuiltin = { fg = colors.color3 }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     -- TSTag               = { };    -- Tags like html tag names.
     -- TSTagDelimiter      = { };    -- Tag delimiter like `<` `>` `/`
     -- TSText              = { };    -- For strings considered text in a markup language.
-    TSTextReference = { fg = colors.color8 },
+    -- TSTextReference = { fg = colors.color0 },
     -- TSEmphasis          = { };    -- For text to be represented with emphasis.
     -- TSUnderline         = { };    -- For text to be represented with an underline.
     -- TSStrike            = { };    -- For strikethrough text.

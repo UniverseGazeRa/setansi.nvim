@@ -1,5 +1,5 @@
 local M = {}
-local config = require("setvtrgb.config")
+local config = require("setvtrgb.newconf")
 
 function M.highlight_all(colors)
   local base_highlights = config.highlights_base(colors)

@@ -1,1 +1,1 @@
-lua require('pywal16').setup()
+lua require('setvtrgb16').setup()
