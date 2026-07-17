@@ -26,8 +26,6 @@ local assets = {
   slim_dot = '•',
 }
 
-local colors = require('setvtrgb.core').get_colors()
-
 -- settings
 local sett = {
   bkg = colors.background,
