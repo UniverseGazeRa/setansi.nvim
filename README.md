@@ -4,7 +4,7 @@ I'm gradually moving from a GUI environment to the virtual console, so I decided
 to have there the benefits we all have with the amazing plugin
 [pywal16.nvim](https://github.com/uZer/pywal16.nvim).
 
-So, setvt16rgb.nvim (this repo) is a fork/modification of the mantained
+So, setansi.nvim (this repo) is a fork/modification of the mantained
 [pywal16.nvim](https://github.com/uZer/pywal16.nvim) aiming to support a
 colorful nvim experience for the Linux virtual console.
 
@@ -18,7 +18,7 @@ Currently the theme implemented is the fantastic ANSI based palette from (hamvoc
 
 <!--toc:start-->
 
-- [pywal16.nvim](#pywal16nvim)
+- [setansi.nvim](#setansi)
   - [Screenshots](#screenshots)
   - [Plugin Support](#plugin-support)
   - [Installation](#installation)
@@ -68,18 +68,18 @@ Feel free to fork or to PR other integrations.
 You can install this plugin with packer:
 
 ```lua
-use { 'uZer/pywal16.nvim', as = 'pywal16' }
+use { 'UniverseGazeRa/setansi.nvim', as = 'setansi' }
 ```
 
 With lazy:
 
 ```lua
 {
-  'uZer/pywal16.nvim',
+  'UniverseGazeRa/setansi.nvim',
   -- for local dev replace with:
-  -- dir = '~/your/path/pywal16.nvim',
+  -- dir = '~/your/path/setansi.nvim',
   config = function()
-    vim.cmd.colorscheme("pywal16")
+    vim.cmd.colorscheme("setansi")
   end,
 }
 ```
@@ -87,7 +87,7 @@ With lazy:
 With vim-plug:
 
 ```vim init.vim
-Plug 'uZer/pywal16.nvim', { 'as': 'pywal16' }
+Plug 'UniverseGazeRa/setansi.nvim', { 'as': 'setansi' }
 ```
 
 or in lua as

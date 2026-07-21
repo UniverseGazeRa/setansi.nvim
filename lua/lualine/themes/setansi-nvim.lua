@@ -1,57 +1,62 @@
+#!/usr/bin/env lua
+
+local core = require('setansi.core')
+local colors = core.get_colors()
+
 local setansi = {}
 
 setansi.normal = {
-  a = { ctermbg = 4, ctermfg = 0 },
-  b = { ctermbg = 0, ctermfg = 4 },
-  c = { ctermbg = 0, ctermfg = 4 },
-  z = { ctermbg = 4, ctermfg = 0 },
-  y = { ctermbg = 0, ctermfg = 4 },
-  x = { ctermbg = 0, ctermfg = 4 },
+  a = { bg = colors.color4, fg = colors.color0 },
+  b = { bg = colors.color0, fg = colors.color4 },
+  c = { bg = colors.transparent, fg = colors.color4 },
+  z = { bg = colors.color4, fg = colors.color0 },
+  y = { bg = colors.color0, fg = colors.color4 },
+  x = { bg = colors.transparent, fg = colors.color4 },
 }
 
 setansi.insert = {
-  a = { ctermbg = 2, ctermfg = 0 },
-  b = { ctermbg = 0, ctermfg = 2 },
-  c = { ctermbg = 0, ctermfg = 2 },
-  z = { ctermbg = 2, ctermfg = 0 },
-  y = { ctermbg = 0, ctermfg = 2 },
-  x = { ctermbg = 0, ctermfg = 2 },
+  a = { bg = colors.color2, fg = colors.color0 },
+  b = { bg = colors.color0, fg = colors.color2 },
+  c = { bg = colors.transparent, fg = colors.color2 },
+  z = { bg = colors.color2, fg = colors.color0 },
+  y = { bg = colors.color0, fg = colors.color2 },
+  x = { bg = colors.transparent, fg = colors.color2 },
 }
 
 setansi.command = {
-  a = { ctermbg = 6, ctermfg = 0 },
-  b = { ctermbg = 0, ctermfg = 6 },
-  c = { ctermbg = 0, ctermfg = 6 },
-  z = { ctermbg = 6, ctermfg = 0 },
-  y = { ctermbg = 0, ctermfg = 6 },
-  x = { ctermbg = 0, ctermfg = 6 },
+  a = { bg = colors.color6, fg = colors.color0 },
+  b = { bg = colors.color0, fg = colors.color6 },
+  c = { bg = colors.transparent, fg = colors.color6 },
+  z = { bg = colors.color6, fg = colors.color0 },
+  y = { bg = colors.color0, fg = colors.color6 },
+  x = { bg = colors.transparent, fg = colors.color6 },
 }
 
 setansi.visual = {
-  a = { ctermbg = 5, ctermfg = 0 },
-  b = { ctermbg = 0, ctermfg = 5 },
-  c = { ctermbg = 0, ctermfg = 5 },
-  z = { ctermbg = 5, ctermfg = 0 },
-  y = { ctermbg = 0, ctermfg = 5 },
-  x = { ctermbg = 0, ctermfg = 5 },
+  a = { bg = colors.color5, fg = colors.color0 },
+  b = { bg = colors.color0, fg = colors.color5 },
+  c = { bg = colors.transparent, fg = colors.color5 },
+  z = { bg = colors.color5, fg = colors.color0 },
+  y = { bg = colors.color0, fg = colors.color5 },
+  x = { bg = colors.transparent, fg = colors.color5 },
 }
 
 setansi.replace = {
-  a = { ctermbg = 11, ctermfg = 0 },
-  b = { ctermbg = 0, ctermfg = 11 },
-  c = { ctermbg = 0, ctermfg = 11 },
-  z = { ctermbg = 11, ctermfg = 0 },
-  y = { ctermbg = 0, ctermfg = 11 },
-  x = { ctermbg = 0, ctermfg = 11 },
+  a = { bg = colors.color11, fg = colors.color0 },
+  b = { bg = colors.color0, fg = colors.color11 },
+  c = { bg = colors.transparent, fg = colors.color11 },
+  z = { bg = colors.color11, fg = colors.color0 },
+  y = { bg = colors.color0, fg = colors.color11 },
+  x = { bg = colors.transparent, fg = colors.color11 },
 }
 
 setansi.inactive = {
-  a = { ctermbg = 0, ctermfg = 7 },
-  b = { ctermbg = 0, ctermfg = 0, bold = true },
-  c = { ctermbg = 0, ctermfg = 0 },
-  z = { ctermbg = 0, ctermfg = 7 },
-  y = { ctermbg = 0, ctermfg = 0, bold = true },
-  x = { ctermbg = 0, ctermfg = 0 },
+  a = { bg = colors.color0, fg = colors.color7 },
+  b = { bg = colors.color0, fg = colors.color7 },
+  c = { bg = colors.color0, fg = colors.color7 },
+  z = { bg = colors.color0, fg = colors.color7 },
+  y = { bg = colors.color0, fg = colors.color7 },
+  x = { bg = colors.color0, fg = colors.color7 },
 }
 
 return setansi
