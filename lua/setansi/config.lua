@@ -71,7 +71,7 @@ M.highlights_base = function()
 		healthWarning = { ctermfg = 3 },
 
 		--Syntax
-		Comment = { ctermfg = 8, italic = true },
+		Comment = { ctermfg = 8, ctermbg = 3, italic = true },
 		Constant = { ctermfg = 3 },
 		Error = { ctermfg = 1 },
 		Identifier = { ctermfg = 9 },
