@@ -7,7 +7,7 @@ M.highlights_base = function()
 		NonText = { ctermfg = 1 },
 		Ignore = { ctermfg = "NONE", ctermbg = "NONE" },
 		Bold = { bold = true },
-		Italic = { italic = true },
+		Italic = { ctermfg = 2 },
 		StatusLine = { ctermfg = 15, ctermbg = 8 },
 		StatusLineNC = { ctermfg = 15, ctermbg = 0 },
 		VertSplit = { ctermfg = 8 },
@@ -36,7 +36,7 @@ M.highlights_base = function()
 		CurSearch = { ctermbg = 3, ctermfg = 0 },
 		Search = { ctermbg = 11, ctermfg = 0 },
 		Directory = { ctermfg = 4 },
-		MatchParen = { ctermfg = 3, ctermbg = 0, underline = true },
+		MatchParen = { ctermbg = 2 },
 		SpellBad = { undercurl = true },
 		SpellCap = { undercurl = true },
 		SpellLocal = { undercurl = true },
@@ -52,7 +52,7 @@ M.highlights_base = function()
 		ToolbarButton = { ctermfg = 15, ctermbg = 8 },
 		debugPC = { ctermfg = 7 },
 		debugBreakpoint = { ctermfg = 8 },
-		ErrorMsg = { ctermfg = 1, italic = true, bold = true },
+		ErrorMsg = { ctermfg = 1, bold = true },
 		WarningMsg = { ctermfg = 11 },
 		DiffAdd = { ctermfg = 0, ctermbg = 10 },
 		DiffChange = { ctermfg = 0, ctermbg = 12 },
@@ -71,7 +71,7 @@ M.highlights_base = function()
 		healthWarning = { ctermfg = 3 },
 
 		--Syntax
-		Comment = { ctermfg = 8, italic = true },
+		Comment = { ctermfg = 8 },
 		Constant = { ctermfg = 3 },
 		Error = { ctermfg = 1 },
 		Identifier = { ctermfg = 9 },
@@ -93,10 +93,11 @@ M.highlights_base = function()
 		Todo = { ctermfg = 0, ctermbg = 9 },
 		Type = { ctermfg = 11 },
 		Underlined = { ctermfg = 1 },
-
 		NormalFloat = { ctermfg = 15, ctermbg = 0 },
 		FloatBoarder = { ctermfg = 7, ctermbg = 0 },
 		FloatShadow = { ctermfg = 15, ctermbg = 0 },
+		["@markup.bold"] = { bold = true },
+		["@markup.italic"] = { ctermfg = 2 },
 	}
 end
 
