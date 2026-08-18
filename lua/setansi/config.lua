@@ -92,7 +92,7 @@ M.highlights_base = function()
 		Structure = { ctermfg = 11 },
 		Todo = { ctermfg = 0, ctermbg = 9 },
 		Type = { ctermfg = 11 },
-		Underlined = { ctermfg = 2 },
+		Underlined = { ctermfg = 1 },
 
 		NormalFloat = { ctermfg = 15, ctermbg = 0 },
 		FloatBoarder = { ctermfg = 7, ctermbg = 0 },
