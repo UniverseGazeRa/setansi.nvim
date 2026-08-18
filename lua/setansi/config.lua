@@ -96,6 +96,7 @@ M.highlights_base = function()
 		NormalFloat = { ctermfg = 15, ctermbg = 0 },
 		FloatBoarder = { ctermfg = 7, ctermbg = 0 },
 		FloatShadow = { ctermfg = 15, ctermbg = 0 },
+		TSSpell = { ctermfg = 1 },
 	}
 end
 
