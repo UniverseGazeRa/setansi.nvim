@@ -96,7 +96,7 @@ M.highlights_base = function()
 		NormalFloat = { ctermfg = 15, ctermbg = 0 },
 		FloatBoarder = { ctermfg = 7, ctermbg = 0 },
 		FloatShadow = { ctermfg = 15, ctermbg = 0 },
-		["@markup.bold"] = { bold = true },
+		["@markup.bold"] = { ctermfg = 15, bold = true },
 		["@markup.italic"] = { ctermfg = 2 },
 	}
 end
