@@ -1,11 +1,14 @@
 local M = {}
 
+-- TODO: Should format better the logic: not using more than one color_path
+
 function M.get_colors()
 	local colors_paths = {}
+	local colors = {}
 
 	-- $HOME/.cache/setvtcolors/curr-theme.vim
 	if os.getenv("HOME") then
-		table.insert(colors_paths, os.getenv("HOME") .. "/.cache/setvtcolors/curr-theme.vim")
+		table.insert(colors_paths, os.getenv("HOME") .. "/.cache/setvtcolors/curr-theme")
 	end
 
 	-- use first available path in the possible paths list
@@ -19,30 +22,15 @@ function M.get_colors()
 
 	-- import setvtcolors cache file
 	if colors_path then
-		vim.cmd("source " .. vim.fn.fnameescape(colors_path))
+		local file = assert(io.open(colors_path), "Couldn't read the file!")
+		for line in file:lines() do
+			colors[#colors + 1] = line
+		end
 	else
-		vim.notify("couldn't read setvtcolors, where it is?")
+		vim.notify("couldn't read setvtcolors, where is it?")
 	end
 
-	return {
-		transparent = "None",
-		color0 = vim.g.color0,
-		color1 = vim.g.color1,
-		color2 = vim.g.color2,
-		color3 = vim.g.color3,
-		color4 = vim.g.color4,
-		color5 = vim.g.color5,
-		color6 = vim.g.color6,
-		color7 = vim.g.color7,
-		color8 = vim.g.color8,
-		color9 = vim.g.color9,
-		color10 = vim.g.color10,
-		color11 = vim.g.color11,
-		color12 = vim.g.color12,
-		color13 = vim.g.color13,
-		color14 = vim.g.color14,
-		color15 = vim.g.color15,
-	}
+	return colors
 end
 
 return M
