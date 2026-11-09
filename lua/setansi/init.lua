@@ -6,7 +6,7 @@ local highlights = require("setansi.highlights")
 
 function M.setup()
 	message.message()
-	vim.g.termguicolors = false
+	vim.o.termguicolors = false
 	vim.g.colors_name = "setansi"
 	highlights.highlight_all()
 end
