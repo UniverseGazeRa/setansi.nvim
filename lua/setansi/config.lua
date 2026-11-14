@@ -14,7 +14,7 @@ M.highlights_base = function()
 		TabLineFill = { ctermfg = 0, ctermbg = 0 },
 		TabLineSel = { ctermfg = 0, ctermbg = 11 },
 		Title = { ctermfg = 4, bold = true },
-		CursorLine = { ctermfg = 7, ctermbg = 0 },
+		CursorLine = { ctermfg = "None", ctermbg = "None" },
 		Cursor = { ctermbg = 15, ctermfg = 0 },
 		CursorColumn = { ctermbg = 0 },
 		LineNr = { ctermfg = 8 },

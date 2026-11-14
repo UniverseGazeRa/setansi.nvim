@@ -1,6 +1,7 @@
 local M = {}
 
 -- TODO: Should format better the logic: not using more than one color_path
+-- TODO: Is this necessary? 
 
 function M.get_colors()
 	local colors_paths = {}
